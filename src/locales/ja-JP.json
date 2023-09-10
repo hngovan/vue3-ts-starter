@@ -1,7 +1,22 @@
 {
   "pages": {
-    "home": "このページはホームです。",
-    "about": "このページはアバウトページです。"
+    "auth": {
+      "title": "管理者へようこそ",
+      "form": {
+        "button_login": "ログイン",
+        "label_email": "Eメール",
+        "label_password": "パスワード",
+        "label_remember": "私を覚えてますか",
+        "label_create_account": "アカウントを持っていないのですか ？",
+        "link_forgot_password": "パスワードをお忘れですか ？",
+        "link_create_account": "アカウントを作成する"
+      }
+    },
+    "not_found": {
+      "title": "おっと！！！",
+      "message": "お探しのこのページは見つかりませんでした。",
+      "button": "ホームに戻る"
+    }
   },
   "navigations": {
     "home": "ホーム",
@@ -9,5 +24,8 @@
   },
   "labels": {
     "language": "言語"
+  },
+  "about": {
+    "donate": "Donate: {donate}"
   }
 }

@@ -1,20 +1,92 @@
 import { createI18n } from 'vue-i18n'
 import enUS from '@/locales/en-US.json'
 import jaJP from '@/locales/ja-JP.json'
+import type { MessageSchema, DefineNumberFormat, DefineDateTimeFormat } from '@/types/i18n'
 
-// Type-define 'en-US' as the master schema for the resource
-type MessageSchema = typeof enUS
-
-const i18n = createI18n<[MessageSchema], 'en-US' | 'ja-JP'>({
+const i18n = createI18n<
+  {
+    message: MessageSchema
+    datetime: DefineDateTimeFormat
+    number: DefineNumberFormat
+  },
+  'en-US' | 'ja-JP'
+>({
   legacy: false, // you must set `false`, to use Composition API
   locale: 'en-US',
-  fallbackLocale: 'en-US', // set fallback locale
+  fallbackLocale: 'en-US',
   globalInjection: true,
   messages: {
     'en-US': enUS,
     'ja-JP': jaJP
+  },
+  datetimeFormats: {
+    'en-US': {
+      short: {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      },
+      long: {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        weekday: 'short',
+        hour: 'numeric',
+        minute: 'numeric'
+      }
+    },
+    'ja-JP': {
+      short: {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric'
+      },
+      long: {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        weekday: 'short',
+        hour: 'numeric',
+        minute: 'numeric',
+        hour12: true
+      }
+    }
+  },
+  numberFormats: {
+    'en-US': {
+      currency: {
+        style: 'currency',
+        currency: 'USD',
+        notation: 'standard'
+      },
+      decimal: {
+        style: 'decimal',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      },
+      percent: {
+        style: 'percent',
+        useGrouping: false
+      }
+    },
+    'ja-JP': {
+      currency: {
+        style: 'currency',
+        currency: 'JPY',
+        useGrouping: true,
+        currencyDisplay: 'symbol'
+      },
+      decimal: {
+        style: 'decimal',
+        minimumSignificantDigits: 3,
+        maximumSignificantDigits: 5
+      },
+      percent: {
+        style: 'percent',
+        useGrouping: false
+      }
+    }
   }
-  // something vue-i18n options here ...
 })
 
 export default i18n

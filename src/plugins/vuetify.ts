@@ -119,6 +119,14 @@ export default createVuetify({
       color: 'primary',
       hideDetails: 'auto'
     },
+    VAutocomplete: {
+      variant: 'outlined',
+      color: 'primary',
+      hideDetails: 'auto',
+      VChip: {
+        density: 'default'
+      }
+    },
     VCombobox: {
       variant: 'outlined',
       color: 'primary',

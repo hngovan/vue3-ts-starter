@@ -1,7 +1,22 @@
 {
   "pages": {
-    "home": "This page is home page",
-    "about": "This page is about page"
+    "auth": {
+      "title": "Welcome to Admin!",
+      "form": {
+        "button_login": "Login",
+        "label_email": "Email",
+        "label_password": "Password",
+        "label_remember": "Remember me",
+        "label_create_account": "Do not have an account ?",
+        "link_forgot_password": "Forgot Password ?",
+        "link_create_account": "Create an account"
+      }
+    },
+    "not_found": {
+      "title": "Opps!!!",
+      "message": "This page you are looking for could not be found.",
+      "button": "Go Back to Home"
+    }
   },
   "navigations": {
     "home": "Home",
@@ -9,5 +24,8 @@
   },
   "labels": {
     "language": "Languages"
+  },
+  "about": {
+    "donate": "Donate: {donate}"
   }
 }
