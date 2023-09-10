@@ -18,7 +18,7 @@ const sidebarItem: menu[] = [
   {
     title: 'Dashboard',
     icon: 'mdi-view-dashboard',
-    to: '/'
+    to: '/',
   },
   { header: 'auth' },
   {
@@ -30,6 +30,12 @@ const sidebarItem: menu[] = [
     title: 'Register',
     icon: 'mdi-account-plus',
     to: '/auth/register'
+  },
+  { header: 'extra' },
+  {
+    title: 'Sample Page',
+    icon: 'mdi-shape-outline',
+    to: '/sample-page'
   }
 ]
 

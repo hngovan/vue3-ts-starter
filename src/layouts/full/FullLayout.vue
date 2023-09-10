@@ -9,9 +9,7 @@ import MainView from './MainLayout.vue'
       <MainView />
       <v-main>
         <v-container fluid class="page-wrapper">
-          <div class="maxWidth">
-            <RouterView />
-          </div>
+          <RouterView />
         </v-container>
       </v-main>
     </v-app>

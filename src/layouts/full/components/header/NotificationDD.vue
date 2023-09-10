@@ -1,5 +1,5 @@
 <template>
-  <v-btn icon variant="text" class="custom-hover-primary ml-0 ml-md-5 text-muted">
+  <v-btn icon variant="text" class="custom-hover-primary">
     <v-badge dot color="primary" offset-x="-5" offset-y="-3">
       <v-icon size="large" color="" icon="mdi-bell-ring-outline"></v-icon>
     </v-badge>

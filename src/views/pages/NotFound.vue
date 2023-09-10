@@ -1,10 +1,12 @@
 <template>
-  <div class="d-flex justify-center align-center text-center h-100vh">
-    <div>
+  <v-app>
+    <div class="d-flex flex-column justify-center align-center text-center vh-100">
       <img src="@/assets/images/background/errorimg.svg" width="500" alt="404" />
-      <h1 class="text-h1 pt-3">Opps!!!</h1>
-      <h4 class="text-h4 my-8">This page you are looking for could not be found.</h4>
-      <v-btn variant="flat" color="primary" class="mb-4" to="/">Go Back to Home</v-btn>
+      <h1 class="text-h1 pt-3">{{ $t('pages.not_found.title') }}</h1>
+      <h4 class="text-h4 my-8">{{ $t('pages.not_found.message') }}</h4>
+      <v-btn variant="flat" color="primary" class="mb-4" to="/">
+        {{ $t('pages.not_found.button') }}
+      </v-btn>
     </div>
-  </div>
+  </v-app>
 </template>

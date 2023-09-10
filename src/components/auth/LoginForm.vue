@@ -18,7 +18,7 @@ const isPasswordVisible = ref(false)
         <v-text-field
           v-model="form.email"
           autofocus
-          label="Email"
+          :label="$t('pages.auth.form.label_email')"
           type="email"
           placeholder="example@email.com"
           autocomplete="username"
@@ -29,7 +29,7 @@ const isPasswordVisible = ref(false)
       <v-col cols="12">
         <v-text-field
           v-model="form.password"
-          label="Password"
+          :label="$t('pages.auth.form.label_password')"
           placeholder=""
           autocomplete="current-password"
           :type="isPasswordVisible ? 'text' : 'password'"
@@ -38,24 +38,24 @@ const isPasswordVisible = ref(false)
         />
         <!-- remember me checkbox -->
         <div class="d-flex align-center justify-space-between flex-wrap mt-1 mb-4">
-          <v-checkbox v-model="form.remember" label="Remember me" />
+          <v-checkbox v-model="form.remember" :label="$t('pages.auth.form.label_remember')" />
 
           <RouterLink to="/" class="text-primary text-decoration-none font-weight-medium ms-2 mb-1">
-            Forgot Password ?
+            {{ $t('pages.auth.form.link_forgot_password') }}
           </RouterLink>
         </div>
       </v-col>
 
       <v-col cols="12" class="pt-0">
-        <v-btn size="large" type="submit" block>Login</v-btn>
+        <v-btn size="large" type="submit" block>{{ $t('pages.auth.form.button_login') }}</v-btn>
       </v-col>
       <v-col cols="12" class="text-center text-base">
-        Do not have an account ?
+        {{ $t('pages.auth.form.label_create_account') }}
         <RouterLink
           to="/auth/register"
           class="text-primary text-decoration-none font-weight-medium ms-2"
         >
-          Create an account
+          {{ $t('pages.auth.form.link_create_account') }}
         </RouterLink>
       </v-col>
     </v-row>

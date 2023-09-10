@@ -3,7 +3,7 @@ import type { menu } from './sidebarItem'
 
 export interface Props {
   item: menu
-  size?: string
+  size?: 'x-small' | 'small' | 'medium' | 'large' | 'x-large'
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -18,13 +18,12 @@ const props = withDefaults(defineProps<Props>(), {
     :to="props.item.to"
     rounded
     class="mb-1"
-    active-color="primary"
     :disabled="props.item.disabled"
     :target="props.item.type === 'external' ? '_blank' : ''"
   >
     <!---If icon-->
     <template #prepend>
-      <v-icon :size="size" color="purple-darken-2" :icon="props.item.icon"></v-icon>
+      <v-icon :size="size" :icon="props.item.icon"></v-icon>
     </template>
     <v-list-item-title>{{ props.item.title }}</v-list-item-title>
     <!---If Caption-->

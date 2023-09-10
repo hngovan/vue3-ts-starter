@@ -12,6 +12,11 @@ const MainRoutes: RouteRecordRaw = {
       name: 'Dashboard',
       path: '/',
       component: () => import('@/views/dashboard/DashboardView.vue')
+    },
+    {
+      name: 'Sample Page',
+      path: '/sample-page',
+      component: () => import('@/views/pages/SamplePage.vue')
     }
   ]
 }
