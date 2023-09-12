@@ -1,4 +1,4 @@
-import { createVuetify } from 'vuetify'
+import { createVuetify, type VuetifyOptions } from 'vuetify'
 import { aliases, mdi } from 'vuetify/iconsets/mdi'
 import { en } from 'vuetify/locale'
 import { LightTheme } from '@/theme/LightTheme'
@@ -6,18 +6,18 @@ import { DarkTheme } from '@/theme/DarkTheme'
 
 import '@mdi/font/css/materialdesignicons.css'
 
-export default createVuetify({
-  locale: {
-    locale: 'en',
-    fallback: 'en',
-    messages: { en }
-  },
+const vuetifyConfig: VuetifyOptions = {
   icons: {
     defaultSet: 'mdi',
     aliases,
     sets: {
       mdi
     }
+  },
+  locale: {
+    locale: 'en',
+    fallback: 'en',
+    messages: { en }
   },
   theme: {
     defaultTheme: 'dark',
@@ -149,4 +149,6 @@ export default createVuetify({
       hideDetails: 'auto'
     }
   }
-})
+}
+
+export default createVuetify(vuetifyConfig)

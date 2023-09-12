@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import NotificationDD from './NotificationDD.vue'
 import ThemeSwitcher from './ThemeSwitcher.vue'
-import ProfileDD from './ProfileDD.vue'
+import LanguageDropdown from './settingsDropdown/LanguageDropdown.vue'
+import ProfileDropdown from './settingsDropdown/ProfileDropdown.vue'
 
 const emit = defineEmits<{
   toggleDrawer: [sDrawer: boolean]
@@ -30,8 +31,10 @@ const toggleSidebar = (sDrawer: boolean) => {
         <ThemeSwitcher />
         <!-- Notification -->
         <NotificationDD />
+        <!-- Language Picker -->
+        <LanguageDropdown />
         <!-- User Profile -->
-        <ProfileDD />
+        <ProfileDropdown />
       </div>
     </div>
   </v-app-bar>

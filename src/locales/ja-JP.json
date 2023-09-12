@@ -16,11 +16,16 @@
       "title": "おっと！！！",
       "message": "お探しのこのページは見つかりませんでした。",
       "button": "ホームに戻る"
+    },
+    "sample_page": {
+      "title": "これはサンプルページです"
     }
   },
   "navigations": {
-    "home": "ホーム",
-    "about": "アバウト"
+    "dashboard": "ダッシュボード",
+    "login": "ログイン",
+    "register": "登録",
+    "sample_page": "サンプルページ"
   },
   "labels": {
     "language": "言語"
