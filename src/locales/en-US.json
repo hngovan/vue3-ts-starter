@@ -16,11 +16,16 @@
       "title": "Opps!!!",
       "message": "This page you are looking for could not be found.",
       "button": "Go Back to Home"
+    },
+    "sample_page": {
+      "title": "This is a sample page"
     }
   },
   "navigations": {
-    "home": "Home",
-    "about": "About"
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "sample_page": "Sample Page"
   },
   "labels": {
     "language": "Languages"

@@ -1,3 +1,5 @@
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 export interface menu {
   header?: string
   title?: string
@@ -16,27 +18,38 @@ export interface menu {
 const sidebarItem: menu[] = [
   { header: 'Home' },
   {
-    title: 'Dashboard',
+    title: 'navigations.dashboard',
     icon: 'mdi-view-dashboard',
-    to: '/',
+    to: '/'
   },
   { header: 'auth' },
   {
-    title: 'Login',
+    title: 'navigations.login',
     icon: 'mdi-login',
     to: '/auth/login'
   },
   {
-    title: 'Register',
+    title: 'navigations.register',
     icon: 'mdi-account-plus',
     to: '/auth/register'
   },
   { header: 'extra' },
   {
-    title: 'Sample Page',
+    title: 'navigations.sample_page',
     icon: 'mdi-shape-outline',
     to: '/sample-page'
   }
 ]
 
-export default sidebarItem
+export default computed(() => {
+  const { t } = useI18n()
+  return sidebarItem.map(item => {
+    if (item.title) {
+      return {
+        ...item,
+        title: t(item.title)
+      }
+    }
+    return item
+  })
+})
