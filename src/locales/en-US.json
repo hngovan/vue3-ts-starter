@@ -32,5 +32,11 @@
   },
   "about": {
     "donate": "Donate: {donate}"
+  },
+  "tooltip": {
+    "theme": "Theme",
+    "translate": "Translate",
+    "notification": "Notification",
+    "info": "Info"
   }
 }

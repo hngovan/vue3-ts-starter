@@ -32,5 +32,11 @@
   },
   "about": {
     "donate": "Donate: {donate}"
+  },
+  "tooltip": {
+    "theme": "テーマ",
+    "translate": "翻訳する",
+    "notification": "通知",
+    "info": "情報"
   }
 }

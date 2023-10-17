@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { mergeProps } from 'vue'
 import { useI18n } from 'vue-i18n'
-const { locale} = useI18n()
+const { locale } = useI18n()
 
 const handleSetLanguages = (lang: 'en-US' | 'ja-JP') => {
   locale.value = lang
@@ -11,11 +11,10 @@ const handleSetLanguages = (lang: 'en-US' | 'ja-JP') => {
 <template>
   <v-menu>
     <template #activator="{ props: menu }">
-      <v-tooltip location="bottom">
+      <v-tooltip :text="$t('tooltip.translate')">
         <template #activator="{ props: tooltip }">
           <v-btn icon="mdi-translate" v-bind="mergeProps(menu, tooltip)"></v-btn>
         </template>
-        <span>Translate</span>
       </v-tooltip>
     </template>
 

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { mergeProps } from 'vue'
 const items = [
   { text: 'Profile', icon: 'mdi-account', to: '' },
   { text: 'Account', icon: 'mdi-email', to: '' },
@@ -6,18 +7,22 @@ const items = [
 ]
 </script>
 <template>
-  <v-menu
-    :close-on-content-click="false"
-    width="230"
-    location="bottom end"
-    offset="14px"
-  >
-    <template #activator="{ props }">
-      <v-btn class="profileBtn custom-hover-primary" variant="text" v-bind="props" icon>
-        <v-avatar size="35" color="surface-variant">
-          <img src="https://cdn.vuetifyjs.com/images/john.jpg" height="35" alt="user" />
-        </v-avatar>
-      </v-btn>
+  <v-menu :close-on-content-click="false" width="230" location="bottom end" offset="14px">
+    <template #activator="{ props: menu }">
+      <v-tooltip :text="$t('tooltip.info')">
+        <template #activator="{ props: tooltip }">
+          <v-btn
+            class="profileBtn custom-hover-primary"
+            variant="text"
+            v-bind="mergeProps(menu, tooltip)"
+            icon
+          >
+            <v-avatar size="35" color="surface-variant">
+              <img src="https://cdn.vuetifyjs.com/images/john.jpg" height="35" alt="user" />
+            </v-avatar>
+          </v-btn>
+        </template>
+      </v-tooltip>
     </template>
     <v-list lines="one" density="compact">
       <v-list-item

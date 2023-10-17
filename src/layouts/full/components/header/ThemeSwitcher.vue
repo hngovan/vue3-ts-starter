@@ -10,11 +10,14 @@ const switchSunMoon = computed(() =>
 const toggleTheme = () => {
   theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
 }
-
 </script>
 
 <template>
-  <v-btn icon variant="text" @click="toggleTheme">
-    <v-icon size="large" :icon="switchSunMoon"></v-icon>
-  </v-btn>
+  <v-tooltip :text="$t('tooltip.translate')">
+    <template #activator="{ props }">
+      <v-btn icon variant="text" v-bind="props" @click="toggleTheme">
+        <v-icon size="large" :icon="switchSunMoon"></v-icon>
+      </v-btn>
+    </template>
+  </v-tooltip>
 </template>
