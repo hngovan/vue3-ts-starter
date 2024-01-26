@@ -1,5 +1,5 @@
-import axios from 'axios'
 import type { AxiosResponse, InternalAxiosRequestConfig, AxiosError } from 'axios'
+import axios from 'axios'
 
 const service = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL

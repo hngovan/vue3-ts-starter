@@ -1,10 +1,11 @@
 <script setup lang="ts">
-const props = defineProps({
-  item: {
-    type: Object,
-    default: () => ({})
-  }
-})
+import type { menu } from './sidebarItem'
+
+type propsType = {
+  item: menu
+}
+
+const props = defineProps<propsType>()
 </script>
 
 <template>

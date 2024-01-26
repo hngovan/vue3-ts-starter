@@ -2,6 +2,7 @@
 import LoginForm from '@/components/auth/LoginForm.vue'
 import logo from '@/assets/images/logo/logo.svg'
 </script>
+
 <template>
   <div class="d-flex align-center justify-center">
     <v-row class="vh-100 d-flex justify-center align-center">
@@ -11,7 +12,7 @@ import logo from '@/assets/images/logo/logo.svg'
             <div class="d-flex justify-center align-center py-4 mx-auto" style="width: 50px">
               <v-img cover :src="logo" />
             </div>
-            <h5 class="text-h5 text-center mb-5">{{ $t('pages.auth.title') }}</h5>
+            <h5 class="text-h5 text-center mb-5">{{ $t('pages.auth.login.title') }}</h5>
             <LoginForm />
           </v-card-item>
         </v-card>

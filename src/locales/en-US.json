@@ -1,15 +1,32 @@
 {
   "pages": {
     "auth": {
-      "title": "Welcome to Admin!",
-      "form": {
-        "button_login": "Login",
-        "label_email": "Email",
-        "label_password": "Password",
-        "label_remember": "Remember me",
-        "label_create_account": "Do not have an account ?",
-        "link_forgot_password": "Forgot Password ?",
-        "link_create_account": "Create an account"
+      "login": {
+        "title": "Welcome to Admin!",
+        "form": {
+          "button_login": "Login",
+          "label_email": "Email",
+          "label_password": "Password",
+          "label_remember": "Remember me",
+          "label_create_account": "Do not have an account?",
+          "link_forgot_password": "Forgot Password ?",
+          "link_create_account": "Create an account"
+        }
+      },
+      "register": {
+        "title": "Register",
+        "form": {
+          "button_register": "Register",
+          "label_first_name": "First Name",
+          "label_last_name": "Last Name",
+          "label_email": "Email",
+          "label_password": "Password",
+          "label_confirm_password": "confirm Password",
+          "i_agree": "I agree all statements in Terms of service",
+          "link_terms": "Terms of service",
+          "link_already_have_an_account": "Already have an account?",
+          "link_log_in": "Log in"
+        }
       }
     },
     "not_found": {
@@ -21,7 +38,7 @@
       "title": "This is a sample page"
     }
   },
-  "navigations": {
+  "navigation": {
     "dashboard": "Dashboard",
     "login": "Login",
     "register": "Register",

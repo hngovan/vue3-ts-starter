@@ -9,7 +9,9 @@ export const useConfigStore = defineStore('config', () => {
 
   const locale: Ref<string> = ref(window.navigator.languages[0] ?? window.navigator.language)
 
-  /** Toggle Dark/Light mode */
+  /**
+   * Toggle Dark/Light mode
+   */
   const toggleTheme = () => (theme.value = !theme.value)
   /**
    * Set Locale.

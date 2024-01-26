@@ -11,12 +11,12 @@ const AuthRoutes: RouteRecordRaw = {
       name: 'Login',
       path: '/auth/login',
       component: () => import('@/views/auth/LoginView.vue')
+    },
+    {
+      name: 'Register',
+      path: '/auth/register',
+      component: () => import('@/views/auth/RegisterView.vue')
     }
-    // {
-    //     name: 'Register',
-    //     path: '/auth/register',
-    //     component: () => import('@/views/auth/RegisterView.vue')
-    // },
   ]
 }
 

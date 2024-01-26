@@ -39,7 +39,7 @@ router.afterEach((to, from, failure) => {
 
   nextTick(() => {
     if (typeof to.name === 'string') {
-      document.title = to.name
+      document.title = to.name + ' ' + '-' + ' VUE 3'
     }
   })
   globalStore.setLoading(false)

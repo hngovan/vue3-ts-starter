@@ -1,15 +1,30 @@
 {
   "pages": {
     "auth": {
-      "title": "管理者へようこそ",
-      "form": {
-        "button_login": "ログイン",
-        "label_email": "Eメール",
-        "label_password": "パスワード",
-        "label_remember": "私を覚えてますか",
-        "label_create_account": "アカウントを持っていないのですか ？",
-        "link_forgot_password": "パスワードをお忘れですか ？",
-        "link_create_account": "アカウントを作成する"
+      "login": {
+        "title": "管理者へようこそ",
+        "form": {
+          "button_login": "ログイン",
+          "label_email": "Eメール",
+          "label_password": "パスワード",
+          "label_remember": "私を覚えてますか",
+          "label_create_account": "アカウントを持っていないのですか ？",
+          "link_forgot_password": "パスワードをお忘れですか ？",
+          "link_create_account": "アカウントを作成する"
+        }
+      },
+      "register": {
+        "title": "登録する",
+        "form": {
+          "button_register": "登録する",
+          "label_first_name": "ファーストネーム",
+          "label_last_name": "苗字",
+          "label_email": "Eメール",
+          "label_password": "パスワード",
+          "label_confirm_password": "パスワードを認証する",
+          "i_agree": "利用規約のすべての記述に同意します",
+          "link_terms": "利用規約"
+        }
       }
     },
     "not_found": {

@@ -18,24 +18,24 @@ export interface menu {
 const sidebarItem: menu[] = [
   { header: 'Home' },
   {
-    title: 'navigations.dashboard',
+    title: 'navigation.dashboard',
     icon: 'mdi-view-dashboard',
     to: '/'
   },
   { header: 'auth' },
   {
-    title: 'navigations.login',
+    title: 'navigation.login',
     icon: 'mdi-login',
     to: '/auth/login'
   },
   {
-    title: 'navigations.register',
+    title: 'navigation.register',
     icon: 'mdi-account-plus',
     to: '/auth/register'
   },
   { header: 'extra' },
   {
-    title: 'navigations.sample_page',
+    title: 'navigation.sample_page',
     icon: 'mdi-shape-outline',
     to: '/sample-page'
   }

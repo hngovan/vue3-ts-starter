@@ -18,7 +18,7 @@ html {
 
 @media (max-width: 800px) {
   .spacer {
-      padding: 40px 0;
+    padding: 40px 0;
   }
 }
 .cursor-pointer {
@@ -30,8 +30,8 @@ html {
   padding: 24px;
   padding-bottom: 30px;
 
-  @media screen and (max-width:600px){
-      padding: 10px;
+  @media screen and (max-width: 600px) {
+    padding: 10px;
   }
 }
 
@@ -62,8 +62,8 @@ $sizes: (
 
 @each $pixel, $size in $sizes {
   .#{$pixel} {
-      font-size: $size;
-      line-height: $size + 10;
+    font-size: $size;
+    line-height: $size + 10;
   }
 }
 
@@ -73,9 +73,9 @@ $sizes: (
   right: 30px;
   border-radius: 50%;
   .icon {
-      animation: progress-circular-rotate 1.4s linear infinite;
-      transform-origin: center center;
-      transition: all 0.2s ease-in-out;
+    animation: progress-circular-rotate 1.4s linear infinite;
+    transform-origin: center center;
+    transition: all 0.2s ease-in-out;
   }
 }
 .fixed-width {
@@ -128,7 +128,7 @@ $sizes: (
   color: rgb(var(--v-theme-lightText));
   text-decoration: none;
   &:hover {
-      color: rgb(var(--v-theme-primary));
+    color: rgb(var(--v-theme-primary));
   }
 }
 .z-auto.v-card {
@@ -145,7 +145,6 @@ $sizes: (
 .text-hover-primary {
   color: rgb(var(--v-theme-darkText));
   &:hover {
-      color: rgb(var(--v-theme-primary));
+    color: rgb(var(--v-theme-primary));
   }
 }
-
