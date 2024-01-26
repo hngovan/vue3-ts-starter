@@ -12,6 +12,7 @@ const state: State = {
   double: computed({
     get: () => state.count.value * 2,
     set: val => {
+      console.log(val)
       state.count.value = val
     }
   })
