@@ -23,7 +23,9 @@
           "label_password": "パスワード",
           "label_confirm_password": "パスワードを認証する",
           "i_agree": "利用規約のすべての記述に同意します",
-          "link_terms": "利用規約"
+          "link_terms": "利用規約",
+          "link_already_have_an_account": "すでにアカウントをお持ちですか？",
+          "link_log_in": "ログイン"
         }
       }
     },
