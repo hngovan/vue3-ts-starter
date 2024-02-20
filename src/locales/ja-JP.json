@@ -38,7 +38,7 @@
       "title": "これはサンプルページです"
     }
   },
-  "navigations": {
+  "navigation": {
     "dashboard": "ダッシュボード",
     "login": "ログイン",
     "register": "登録",
